@@ -509,6 +509,13 @@ ul {
   border: 1px solid var(--glass-border);
 }
 
+.contact-item span:last-child {
+  word-break: break-all;
+  overflow-wrap: break-word;
+  flex: 1;
+  min-width: 0;
+}
+
 .contact-item:hover {
   background: rgba(59, 130, 246, 0.1);
   border-color: rgba(59, 130, 246, 0.3);
@@ -574,5 +581,9 @@ ul {
   }
   .contact-links {
     align-items: stretch;
+  }
+  .contact-item {
+    font-size: 0.95rem;
+    padding: 0.8rem 1rem;
   }
 }
